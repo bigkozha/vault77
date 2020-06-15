@@ -1,14 +1,16 @@
 from django.urls import path
 from django.http import HttpResponse
+from counter.models import Counter
 
 
 value = 0
 
 
 def counter(request):
-    global value
-    value += 1
-    return HttpResponse(f'<div id="counter">{value}</div>')
+    instace, created = Counter.objects.get_or_create(id=1)
+    instace.value += 1
+    instace.save()
+    return HttpResponse(f'<div id="counter">{instace.value}</div>')
 
 
 urlpatterns = [
