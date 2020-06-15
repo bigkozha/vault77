@@ -2,15 +2,20 @@ import pytest
 
 
 @pytest.fixture
-def mock_query_word():
+def expected_query_word():
     return 'nuraly zhanbyrbayev'
 
 
 @pytest.fixture
-def mock_title_google():
+def expected_title_google():
     return 'Google'
 
 
 @pytest.fixture
-def mock_search_result():
-    return ['Link 1', 'Link 2', 'Link 3', 'Link 4', 'Link 5', 'Link 6']
+def expected_search_result():
+    return [
+    'Nuraly Zhanbyrbayev - Kazakhstan | Professional Profile ...'
+    , 'Nuraly Zhanbyrbayev (@z.nuraly) • Instagram photos and videos'
+    , 'Нуралы Жанбырбаев | Facebook'
+    , 'Нуралы Жанбырбаев | Facebook'
+    , 'Nuraly Zhanbyrbayev - Middle .NET Developer - Upwork ...']
