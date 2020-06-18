@@ -30,7 +30,7 @@ def test_decrement(live_server, get_driver):
 
     with get_driver as driver:
         driver.get(live_server.url + '/decrement')
-        counter = driver.find_elememt_by_id('counter')
+        counter = driver.find_element_by_id('counter')
         assert '0' == counter.text
 
 
@@ -42,5 +42,4 @@ def test_decrement_instance_value_zero(live_server, get_driver):
     
     with get_driver as driver:
         driver.get(live_server.url + '/decrement')
-        counter = driver.find_elememt_by_id('counter')
-        assert 'error' in live_server.url
+        assert 'error' in driver.current_url
