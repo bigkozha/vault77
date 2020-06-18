@@ -1,6 +1,7 @@
 from django.urls import path
-from counter.views import counter
+from counter import views
 
 urlpatterns = [
-    path('', counter)
+    path('', views.counter),
+    path('increment', views.increment)
 ]
