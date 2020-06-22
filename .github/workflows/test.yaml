@@ -3,6 +3,7 @@
 
 env:
   GITHUB_ACTIONS: True
+  DJANGO_SETTINGS_MODULE: '2_django.settings'
 
 name: Test
 
