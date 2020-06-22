@@ -26,4 +26,4 @@ jobs:
         pip install -r requirements.txt
     - name: Test with pytest
       run: |
-        pytest ./test_django.py
+        pytest ./2_django/test_django.py
