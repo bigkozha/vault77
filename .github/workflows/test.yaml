@@ -3,7 +3,7 @@
 
 name: Test
 
-push: push
+on: push
 
 jobs:
   test:
