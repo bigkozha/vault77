@@ -1,4 +1,3 @@
-import pytest
 from counter.models import Counter
 
 
