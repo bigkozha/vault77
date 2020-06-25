@@ -2,3 +2,4 @@ django
 pytest
 pytest-django
 selenium
+flake8
