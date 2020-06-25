@@ -1,6 +1,6 @@
+from django.shortcuts import redirect, render
+
 from counter.models import Counter
-from django.shortcuts import render
-from django.shortcuts import redirect
 
 
 def counter(request):
