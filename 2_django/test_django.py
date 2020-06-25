@@ -38,7 +38,7 @@ def test_decrement_instance_value_zero(live_server, get_driver):
     instance.value = 0
     instance.save()
     assert 0 == instance.value
-    
+
     with get_driver as driver:
         driver.get(live_server.url + '/decrement')
         assert 'error' in driver.current_url
