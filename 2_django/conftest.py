@@ -4,6 +4,7 @@ from counter.models import Counter
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
+
 @pytest.yield_fixture(scope="session")
 def driver():
     if os.environ.get('GITHUB_ACTIONS'):
@@ -16,6 +17,7 @@ def driver():
     else:
         with webdriver.Remote(command_executor='http://127.0.0.1:9515') as driver:
             yield driver
+
 
 @pytest.fixture()
 def counter():
