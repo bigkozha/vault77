@@ -27,6 +27,7 @@ jobs:
     - name: linters
       run: |
         flake8
+        isort
     - name: Test with pytest
       run: |
         pytest ./2_django/test_django.py
