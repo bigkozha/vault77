@@ -1,8 +1,10 @@
 import os
+
 import pytest
-from counter.models import Counter
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+
+from counter.models import Counter
 
 
 @pytest.yield_fixture(scope="session")
