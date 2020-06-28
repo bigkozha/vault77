@@ -1,6 +1,3 @@
-import pytest
-
-
 def test_basic(live_server, driver):
     driver.get(live_server.url)
     elem_counter = driver.find_element_by_id('counter')
