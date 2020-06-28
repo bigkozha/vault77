@@ -27,7 +27,7 @@ jobs:
     - name: linters
       run: |
         flake8 --max-line-length 120
-        isort
+        isort -c
     - name: Test with pytest
       run: |
         pytest ./2_django/test_django.py
